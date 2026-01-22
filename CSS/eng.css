@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Bauhausb';
+    src: url(Bauhausb.ttf);
+}
+
+@font-face {
+    font-family: 'Bauhaush';
+    src: url(Bauhaush.ttf);
+}
+
+*{
+    margin: 0px;
+}
+
+.black{
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -2;
+    display: flex;
+}
+
+.background{
+    background-image: url(/Images/Velvet_Background.png);
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    top: 10vh;
+}
+
+.pagetop{
+    display: flex;
+}
+
+.logo{
+    top: 6.5vh;
+    left: 1.4vw;
+    display: flex;
+    position: relative;
+}
+
+.logo img{
+    width: 10.1vw;
+}
+
+.smooth{
+    position: relative;
+    color: #edc811;
+    font-family: 'Bauhaush';
+    display: flex;
+    font-size: 6.8vw;
+    top: 12.9vh;
+    left: 11.5vw;
+}
+
+.midpage{
+    left: 5vw;
+    width: 75vw;
+    height: 58vh;
+    position: relative;
+    top: 7vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 23.4vh;
+    width: 23vw;
+    border: solid 6px white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    align-content: center;
+}
+
+.itemname{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    color: white;
+    font-family: 'Bauhaush';
+    z-index: 2;
+    font-size: 2.5vw;
+    text-wrap: initial;
+    text-align: center;
+}
+
+.box img{
+    flex-shrink: 0;
+    max-width: 125%;
+    height: auto;
+}
+
+.footer{
+    position: absolute;
+    bottom: 12vh;
+    right: 3vw;
+}
+
+.tag{
+    font-family: 'Bauhausb';
+    color: white;
+    font-size: 2.5vw;
+}

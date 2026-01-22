@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Bauhausb';
+    src: url(Bauhausb.ttf);
+}
+
+@font-face {
+    font-family: 'Bauhaush';
+    src: url(Bauhaush.ttf);
+}
+
+*{
+    margin: 0px;
+}
+
+.black{
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -2;
+    display: flex;
+}
+
+.background{
+    background-image: url(/Images/Velvet_Background.png);
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    top: 10vh;
+}
+
+.pagetop{
+    display: flex;
+}
+
+.logo{
+    top: 6.5vh;
+    left: 1.4vw;
+    display: flex;
+    position: relative;
+}
+
+.logo img{
+    width: 10.1vw;
+}
+
+.smooth{
+    position: relative;
+    color: #edc811;
+    font-family: 'Bauhaush';
+    display: flex;
+    font-size: 6.8vw;
+    top: 12.9vh;
+    left: 11.5vw;
+}
+
+.midpage{
+    left: 3vw;
+    width: 80vw;
+    height: 50vh;
+    position: relative;
+    top: 14vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    height: 20.4vh;
+    width: 17vw;
+    border: solid 6px white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.itemname{
+    position: fixed;
+    color: white;
+    font-family: 'Bauhaush';
+    z-index: 2;
+    font-size: 2.5vw;
+}
+
+.box img{
+    flex-shrink: 0;
+}
+
+.footer{
+    position: absolute;
+    bottom: 12vh;
+    right: 3vw;
+}
+
+.tag{
+    font-family: 'Bauhausb';
+    color: white;
+    font-size: 2.5vw;
+}
