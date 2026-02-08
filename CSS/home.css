@@ -8,105 +8,140 @@
     src: url(Bauhaush.ttf);
 }
 
+@font-face {
+    font-family: 'Bauhausm';
+    src: url(Bauhausm.ttf);
+}
+
+@font-face {
+    font-family: 'Bauhausl';
+    src: url(Bauhausl.ttf);
+}
+
 *{
     margin: 0px;
 }
 
-.black{
-    background-color: #000000;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: -2;
-    display: flex;
-}
-
 .background{
-    background-image: url(/Images/Velvet_Background.png);
-    height: 80vh;
+    background-image: url(/Images/Gradient_Background.png);
+    height: 115vh;
     width: 100vw;
     background-size: cover;
     background-position: center center;
     position: fixed;
     z-index: -1;
     display: flex;
-    top: 10vh;
 }
 
 .pagetop{
     display: flex;
+    height: 22vh;
+    border-bottom: solid 5px #edc811;
+    align-items: end;
+    justify-content: space-between;
 }
 
 .logo{
-    top: 6.5vh;
-    left: 1.4vw;
-    display: flex;
     position: relative;
+    display: flex;
+    height: 19vh;
+    left: 2vw;
+    bottom: 1vh;
 }
 
 .logo img{
-    width: 10.1vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slogan{
+    display: inline-flex;
+    align-items: end;
+    position: relative;
+    right: 3.7vw;
 }
 
 .smooth{
-    position: relative;
     color: #edc811;
     font-family: 'Bauhaush';
-    display: flex;
-    font-size: 6.8vw;
-    top: 12.9vh;
-    left: 11.5vw;
+    font-size: 5.5vw;
+    line-height: 1.1;
+}
+
+.velv{
+    color: white;
+    font-family: 'Bauhaush';
+    font-size: 8.5vw;
+    line-height: 0.9;
 }
 
 .midpage{
     position: relative;
     top: 14vh;
     display: flex;
+    justify-content: center;
 }
 
 .container{
     display: flex;
-    width: 100vw;
-    justify-content: space-around;
+    width: 85vw;
+    justify-content: space-between;
 }
 
 .box{
-    width: 34.4vw;
-    height: 33vh;
+    width: 38vw;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
 }
 
 .lighting{
     display: flex;
-    border: solid 4px white;
     align-items: center;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .lighting img{
     display: flex;
     flex-wrap: wrap;
-    width: 34.4vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
 }
 
 .engineering{
     display: flex;
-    border: solid 4px white;
     align-items: center;
 }
 
 .engineering img{
     display: flex;
     flex-wrap: wrap;
-    width: 34.4vw;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.footer{
-    position: absolute;
-    bottom: 12vh;
-    right: 3vw;
-}
-
-.tag{
-    font-family: 'Bauhausb';
+.button{
     color: white;
+    font-family: 'Bauhausb';
     font-size: 2.5vw;
+    background-color: #edc811;
+    text-decoration: none;
+    width: 34.4vw;
+    height: 8vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -8,137 +8,160 @@
     src: url(Bauhaush.ttf);
 }
 
+@font-face {
+    font-family: 'Bauhausm';
+    src: url(Bauhausm.ttf);
+}
+
+@font-face {
+    font-family: 'Bauhausl';
+    src: url(Bauhausl.ttf);
+}
+
 *{
     margin: 0px;
 }
 
-.black{
-    background-color: #000000;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: -2;
-    display: flex;
-}
-
 .background{
-    background-image: url(/Images/Velvet_Background.png);
-    height: 80vh;
+    background-image: url(/Images/Gradient_Background.png);
+    height: 115vh;
     width: 100vw;
-    background-size: cover;
     background-position: center center;
     position: fixed;
     z-index: -1;
     display: flex;
-    top: 10vh;
+    background-size: cover;
 }
 
 .pagetop{
     display: flex;
+    height: 22vh;
+    align-items: end;
+    justify-content: space-between;
 }
 
 .logo{
-    top: 6.5vh;
-    left: 1.4vw;
-    display: flex;
     position: relative;
+    display: flex;
+    height: 19vh;
+    left: 2vw;
+    bottom: 1vh;
 }
 
 .logo img{
-    width: 10.1vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slogan{
+    display: inline-flex;
+    align-items: end;
+    position: relative;
+    right: 3.7vw;
 }
 
 .smooth{
-    position: relative;
     color: #edc811;
     font-family: 'Bauhaush';
-    display: flex;
-    font-size: 6.8vw;
-    top: 12.9vh;
-    left: 11.5vw;
+    font-size: 5.5vw;
+    line-height: 1.1;
+}
+
+.velv{
+    color: white;
+    font-family: 'Bauhaush';
+    font-size: 8.5vw;
+    line-height: 0.9;
 }
 
 .midpage{
     position: relative;
-    width: 75vw;
-    height: 57vh;
-    left: 1.4vw;
-    top: 1vh;
+    left: 4vw;
+    width: 92vw;
+    height: 65vh;
     display: grid;
-    grid-template-columns: 1fr .6fr .55fr;
-    grid-template-rows: 1fr .3fr .35fr;
-    grid-row-gap: 2vh;
-    grid-column-gap: 2.5vw;
+    grid-template-columns: 43% 30.2% 22.8%;
+    grid-template-rows: 63% 35%;
+    gap: 2em;
     justify-items: center;
     align-items: center;
-}
-
-.box{
-    background-color: black;
-    border: solid 5px lightblue;
     color: white;
-    font-family: 'Bauhaush';
 }
 
-.imagecollage{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.scenedescription{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.productfeatures{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.productdescription{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.productpic{
-    border: 0;
-}
-
-.request{
-    position: relative;
+.left{
+    width: 100%;
+    height: 100%;
     display: flex;
-    left: 80vw;
-    bottom: 13vh;
-    background-color: #000000;
-    border: solid 6px white;
-    color: white;
-    font-family: 'Bauhausb';
-    font-size: 1.7vw;
-    width: 17vw;
-    height: 8.5vh;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Bauhausm';
+    font-size: 1.2vw;
+    justify-content: space-around;
+}
+
+.itempic{
+    height: 70%;
+}
+
+.left img{
+    border: solid 8px #edc811;
+    width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.features{
+    width: 100%;
+    height: 100%;
+    font-family: 'Bauhausm';
+    font-size: 1.2vw;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.footer{
-    position: absolute;
-    bottom: 12vh;
-    right: 3vw;
+.pic img{
+    width: 100%;
 }
 
-.tag{
-    font-family: 'Bauhausb';
+.description{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: 'Bauhausm';
+    font-size: 1.2vw;
+}
+
+.contact{
+    position: absolute;
+    right: 2vw;
+    bottom: 3vh;
+    border: solid 3px #edc811;
     color: white;
-    font-size: 2.5vw;
+    font-family: 'Bauhausb';
+    font-size: 2.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 12vw;
+    border-radius: 15px;
 }
