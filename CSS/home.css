@@ -23,7 +23,7 @@
 }
 
 .background{
-    background-image: url(/Images/Gradient_Background.png);
+    background-image: url(\Images\Gradient_Background.png);
     height: 115vh;
     width: 100vw;
     background-size: cover;
