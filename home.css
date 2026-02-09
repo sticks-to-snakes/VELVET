@@ -23,7 +23,7 @@
 }
 
 .background{
-    background-image: url(/Images/Movie_Set.PNG);
+    background-image: url(/Gradient_Background.png);
     height: 115vh;
     width: 100vw;
     background-size: cover;
