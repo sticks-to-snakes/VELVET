@@ -45,7 +45,7 @@
     position: relative;
     display: flex;
     height: 19vh;
-    left: 2vw;
+    left: 3.6vw;
     bottom: 1vh;
 }
 
@@ -144,4 +144,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media(max-width: 900px){
+
+    .midpage{
+        height: 70vh;
+        top: 3vh;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box{
+        width: 70vw;
+    }
+
+    .button{
+        font-size: 4vw;
+    }
+    
 }

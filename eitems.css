@@ -35,7 +35,7 @@
     position: relative;
     display: flex;
     height: 19vh;
-    left: 2vw;
+    left: 3.6vw;
     bottom: 1vh;
 }
 
@@ -116,4 +116,30 @@
     height: 8.5vh;
     justify-content: center;
     align-items: center;
+    border-radius: 29px;
+}
+
+@media(max-width: 900px){
+    .midpage{
+        display: flex;
+        flex-direction: column;
+        width: 92vw;
+        left: 2vw;
+        background-color: black;
+        border: solid 2vw #edc811;
+        top: 4vh;
+    }
+
+    .list{
+        font-size: 4vw;
+    }
+
+    .request{
+        position: relative;
+        top: 8vh;
+        width: 45vw;
+        border: solid 2vw #edc811;
+        left: 25.5vw;
+        font-size: 4vw;
+    }
 }

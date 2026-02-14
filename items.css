@@ -44,7 +44,7 @@
     position: relative;
     display: flex;
     height: 19vh;
-    left: 2vw;
+    left: 3.6vw;
     bottom: 1vh;
 }
 
@@ -123,6 +123,10 @@
     flex-direction: column;
 }
 
+.feat{
+    font-size: 2vw;
+}
+
 .list{
     display: flex;
     flex-direction: column;
@@ -164,4 +168,45 @@
     text-decoration: none;
     width: 12vw;
     border-radius: 15px;
+}
+
+@media(max-width: 900px){
+    .midpage{
+        top: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400vw;
+    }
+    
+    .left{
+        font-size: 3.5vw;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        width: 100%;
+        height: max-content;
+    }
+
+    .features{
+        font-size: 3.5vw;
+        height: max-content;
+    }
+
+    .feat{
+        font-size: 6vw;
+    }
+
+    .description{
+        font-size: 3.5vw;
+    }
+
+    .contact{
+        font-size: 5vw;
+        position: relative;
+        width: 45vw;
+        height: 7vh;
+        bottom: 8vh;
+        left: 27.5vw;
+    }
 }

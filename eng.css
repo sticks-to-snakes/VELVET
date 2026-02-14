@@ -35,7 +35,7 @@
     position: relative;
     display: flex;
     height: 19vh;
-    left: 2vw;
+    left: 3.6vw;
     bottom: 1vh;
 }
 
@@ -110,4 +110,23 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 900px){
+    .midpage{
+        top: 5vw;
+        height: 150vh;
+        width: 100vw;
+        flex-direction: column;
+        left: 0;
+    }
+
+    .box{
+        width: 80vw;
+    }
+
+    .button{
+        width: 60vw;
+        font-size: 4vw;
+    }
 }

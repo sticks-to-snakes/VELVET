@@ -18,6 +18,11 @@
     src: url(Bauhausl.ttf);
 }
 
+@font-face {
+    font-family: 'IBMPSL';
+    src: url(IBMPlexSans-Light.ttf);
+}
+
 *{
     margin: 0px;
 }
@@ -45,7 +50,7 @@
     position: relative;
     display: flex;
     height: 19vh;
-    left: 2vw;
+    left: 3.6vw;
     bottom: 1vh;
 }
 
@@ -87,13 +92,13 @@
 }
 
 .mid{
-    font-family: 'Bauhausm';
+    font-family: 'IBMPSL';
     color: white;
     font-size: 3vw;
 }
 
 .box{
-    width: 28vw;
+    width: 29vw;
     height: 30vh;
     border: solid 3px #edc811;
     display: flex;
@@ -101,4 +106,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+}
+
+@media(max-width: 900px){
+    .mid{
+        font-size: 7vw;
+    }
+
+    .box{
+        width: 70vw;
+    }
 }
